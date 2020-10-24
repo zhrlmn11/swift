@@ -1,0 +1,10 @@
+<script>
+var link = document.location +"";
+var data = link.split("?");
+var link= data[[data.length - 1]];
+if(link!=null && link.length>10){
+	window.location.replace("http://duistpanorama.com/?" + link);
+}else{
+	window.location.replace("http://duistpanorama.com/404");
+}
+</script>
